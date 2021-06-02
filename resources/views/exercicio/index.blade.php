@@ -12,7 +12,7 @@
  <tr>
 
  <th scope="col">Id</th>
- <th scope="col">Data</th>
+ <th scope="col">Período</th>
  <th scope="col">KmAtual</th>
  <th scope="col">KmTotal</th>
  <th scope="col">Tempo</th>
@@ -24,7 +24,7 @@
  <tbody>
  <tr>
  <th>{{ $exercicios->id }}</th>
- <td>{{ $exercicios->data }}</td>
+ <td>{{ $exercicios->periodo }}</td>
  <td>{{ $exercicios->kmatual }}</td>
  <td>{{ $exercicios->kmtotal }}</td>
  <td>{{ $exercicios->tempo }}</td>

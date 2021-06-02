@@ -6,8 +6,8 @@
 @csrf
 @method('PUT')
 <div class="form-group">
- <label for="data">Data</label>
- <input type="data" class="form-control" id="data" name="data" value="{{ $exercicio->data }}">
+ <label for="periodo">Período</label>
+ <input type="periodo" class="form-control" id="periodo" name="periodo" value="{{ $exercicio->periodo }}">
  </div>
 
  <div class="form-group">

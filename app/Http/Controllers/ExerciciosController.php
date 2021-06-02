@@ -25,7 +25,7 @@ class ExerciciosController extends Controller
     public function store(ExercicioRequest $request)
     {
         $exercicio = new Exercicio();
-        $exercicio->data = $request->input('data');
+        $exercicio->periodo = $request->input('periodo');
         $exercicio->kmatual = $request->input('kmatual');
         $exercicio->kmtotal = $request->input('kmtotal');
         $exercicio->tempo = $request->input('tempo');
@@ -52,7 +52,7 @@ class ExerciciosController extends Controller
     {
         $exercicio = Exercicio::find($id);
         if(isset($exercicio)){
-        $exercicio->data = $request->input('data');
+        $exercicio->periodo = $request->input('periodo');
         $exercicio->kmatual = $request->input('kmatual');
         $exercicio->kmtotal = $request->input('kmtotal');
         $exercicio->tempo = $request->input('tempo');

@@ -15,7 +15,7 @@ class CreateExerciciosTable extends Migration
     {
         Schema::create('exercicios', function (Blueprint $table) {
             $table->id();
-            $table->date('periodo');
+            $table->string('periodo');
             $table->string('kmatual');
             $table->string('kmtotal');
             $table->string('tempo');
