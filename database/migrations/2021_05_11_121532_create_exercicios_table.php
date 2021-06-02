@@ -15,10 +15,14 @@ class CreateExerciciosTable extends Migration
     {
         Schema::create('exercicios', function (Blueprint $table) {
             $table->id();
-            $table->string('data');
+            $table->date('periodo');
             $table->string('kmatual');
             $table->string('kmtotal');
             $table->string('tempo');
+
+
+            $table->unsignedBigInteger('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete("cascade");
             $table->timestamps();
         });
     }

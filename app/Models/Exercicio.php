@@ -6,5 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Exercicio extends Model
 {
-    protected $fillable = ['data', 'kmatual', 'kmtotal', 'data', 'tempo'];
+    protected $fillable = ['periodo', 'kmatual', 'kmtotal', 'tempo'];
+
+    public function user()
+    {
+        return $this->hasOne(User::class);
+    }
 }
+ 
