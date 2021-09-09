@@ -17,12 +17,13 @@ class CreateExerciciosTable extends Migration
             $table->id();
             $table->string('periodo');
             $table->string('kmatual');
-            $table->string('kmtotal');
+            $table->string('kmtotal')->nullable();
             $table->string('tempo');
 
 
             $table->unsignedBigInteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->onDelete("cascade");
+            
             $table->timestamps();
         });
     }
